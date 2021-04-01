@@ -1,0 +1,28 @@
+{% extends 'fscohort/base.html' %}
+
+{% block title %}
+    Homeee
+{% endblock title %}
+
+{% block content %}
+    <!-- <form action="https://www.google.com/search" method="get">
+        <input type="text" name="q" placeholder="Title">
+        <input type="submit" value="Search">
+    </form> -->
+    <!-- <form action="." method="get">
+        {{ my_form }}
+    </form> -->
+    <h1>Hello, this is home page template</h1>
+    <!-- {{ title|add:' is the best' }} <br>
+    {{ dict_1|title }} <br>
+    {% for i in my_list %} 
+        {% if i == 3 %} 
+            <p>Bu sayı 3 e esit</p>
+        {% else %}
+            {{ i }} <br>
+        {% endif %}
+    {% endfor %}
+    {{ my_list }} -->
+    <a href="{% url 'add' %}"><button>Add Student</button> </a>
+    <a href="{% url 'list' %}"><button>List Student</button> </a>
+{% endblock %}
